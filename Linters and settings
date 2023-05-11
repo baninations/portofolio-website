@@ -1,0 +1,13 @@
+## Html Linter used:
+
+- HTMLHint.
+
+HTMLHint used with default settings.
+
+## CSS Linter used:
+
+- CSS Stylelint
+
+Settings changed in CSS linters:
+
+- Marked the important rule as "error".

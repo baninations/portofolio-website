@@ -236,3 +236,37 @@ span {
     }
   }
 
+       
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .image {
+            max-width: 100%;
+        }
+        .project-image{
+            width: 900px;
+            height: 500px;
+        }
+        .header-meet {
+            text-align: center;
+        }
+        .technologies-used-list {
+            list-style-type: none; /* Remove default bullet points */
+            margin: 0; /* Remove margin */
+            padding: 0; /* Remove padding */
+        }
+    
+        .technologies-used-list li {
+            margin-left: 20px; /* Adjust the margin to control spacing */
+        }

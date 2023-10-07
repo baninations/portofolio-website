@@ -110,8 +110,9 @@ a:active {
 
 @supports (display: grid) {
     .project-list {
+      text-align: center;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 20px;
       margin: 0;
       padding: 16px;
@@ -119,8 +120,18 @@ a:active {
 }
 
 .grid_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: var(--grid-item-backround-color);
     padding: 16px;
+    height: fit-content;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .grid-work {
@@ -175,6 +186,57 @@ span {
     text-align: center;
 }
 
+ /* Added */
+
+ .page-title {
+    text-align: center;
+ }
+
+ .description {
+    text-align: start;
+ }
+
+ .pokedex {
+    /* background-image: url("../img/pokedex.png"); */
+    background-size: cover; /* Adjust this value as needed */
+    background-repeat: no-repeat;
+    /* background-position: center center; Center the background image */
+    background-position: 50%;
+    height: 500px; /* Set a fixed height for the element */
+    /* color: white; */
+ }
+
+ .tech-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1fr 1fr;
+ }
+
+.pic {
+    height: inherit;
+    width: inherit;
+}
+
+.tech-used {
+    text-align: start;
+    
+}
+
+.technologies-used {
+
+}
+
+.pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    margin-bottom: 5px;
+}
+
+
 @keyframes cloud-move-reverse {
     from {
         transform: translate(446px, 48px);
@@ -220,7 +282,7 @@ span {
   }
   @media all and (min-width: 500px) and (max-width: 750px){
     .project-list {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
   }
   @media all and (max-width: 750px) {
@@ -233,6 +295,29 @@ span {
     }
     h1 {
       font-size: 22px;
+    }
+    .tech-pics {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1fr 1fr;
+     }
+
+     .grid_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--grid-item-backround-color);
+        padding: 16px;
+        height: fit-content;
+    }
+    .pic-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        width: 80vw;
     }
   }
 

@@ -125,7 +125,7 @@ a:active {
     justify-content: space-between;
     background-color: var(--grid-item-backround-color);
     padding: 16px;
-    height: fit-content;
+    min-height: 650px;
 }
 
 .links {
@@ -196,14 +196,11 @@ span {
     text-align: start;
  }
 
- .pokedex {
-    /* background-image: url("../img/pokedex.png"); */
+ .grid_item_ {
     background-size: cover; /* Adjust this value as needed */
     background-repeat: no-repeat;
-    /* background-position: center center; Center the background image */
     background-position: 50%;
     height: 500px; /* Set a fixed height for the element */
-    /* color: white; */
  }
 
  .tech-pics {
